@@ -5,7 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class NotTextFileChosen {
+public class NotTextFileChosenTest {
     @Test
     public void CheckIfFileIsValid() throws NoAlertPresentException, InterruptedException {
         String URL = "http://localhost:3000";
@@ -19,9 +19,8 @@ public class NotTextFileChosen {
 
         WebElement elem = driver.findElement(By.xpath("//input[@type='file']"));
 
-        // 'type' the file location to it as it were a usual <input type='text' /> element
 //        elem.sendKeys("D:\\JavaScript\\SirmaS\\selenium-test\\src\\test\\java\\com\\employees\\employees.txt");
-        elem.sendKeys("D:\\JavaScript\\SirmaS\\selenium-test\\src\\test\\java\\com\\employees\\201803idBack.jpg");
+        elem.sendKeys("D:\\JavaScript\\SirmaS\\selenium-test\\src\\test\\java\\com\\employees\\AYJuRke.png");
 
         // Switching to Alert
         Alert alert = driver.switchTo().alert();
